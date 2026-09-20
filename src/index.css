@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display-hero: "Bricolage Grotesque", sans-serif;
+  --font-headline-lg: "Bricolage Grotesque", sans-serif;
+  --font-headline-md: "Bricolage Grotesque", sans-serif;
+  --font-headline-sm: "Bricolage Grotesque", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-lg: "Space Grotesk", sans-serif;
+  --font-label-md: "Space Grotesk", sans-serif;
+  --font-label-badge: "Space Grotesk", sans-serif;
+
+  --color-surface: #faf9fd;
+  --color-surface-dim: #dbd9dd;
+  --color-surface-bright: #faf9fd;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3f7;
+  --color-surface-container: #efedf1;
+  --color-surface-container-high: #e9e7ec;
+  --color-surface-container-highest: #e3e2e6;
+  --color-on-surface: #1b1b1f;
+  --color-on-surface-variant: #5c4037;
+  --color-inverse-surface: #2f3034;
+  --color-inverse-on-surface: #f2f0f4;
+  --color-outline: #907065;
+  --color-outline-variant: #e5beb2;
+  --color-surface-tint: #aa3600;
+
+  --color-primary: #a63500;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #d04400;
+  --color-on-primary-container: #fffbff;
+  --color-inverse-primary: #ffb59c;
+  --color-primary-fixed: #ffdbcf;
+  --color-primary-fixed-dim: #ffb59c;
+  --color-on-primary-fixed: #390c00;
+  --color-on-primary-fixed-variant: #822700;
+
+  --color-secondary: #b60055;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #e4006c;
+  --color-on-secondary-container: #fffbff;
+  --color-secondary-fixed: #ffd9e0;
+  --color-secondary-fixed-dim: #ffb1c3;
+  --color-on-secondary-fixed: #3f0019;
+  --color-on-secondary-fixed-variant: #8f0041;
+
+  --color-tertiary: #386800;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #498300;
+  --color-on-tertiary-container: #f9ffeb;
+  --color-tertiary-fixed: #96fc27;
+  --color-tertiary-fixed-dim: #7fde00;
+  --color-on-tertiary-fixed: #0e2000;
+  --color-on-tertiary-fixed-variant: #2a5000;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --spacing-gutter: 1.25rem;
+  --spacing-gutter-desktop: 2rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-space-2xl: 4rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 22s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom font utility classes */
+.font-display-hero {
+  font-family: var(--font-display-hero);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.font-headline-lg {
+  font-family: var(--font-headline-lg);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-md {
+  font-family: var(--font-headline-md);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.font-headline-sm {
+  font-family: var(--font-headline-sm);
+  font-weight: 600;
+}
+
+.font-label-lg {
+  font-family: var(--font-label-lg);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.font-label-md {
+  font-family: var(--font-label-md);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.font-label-badge {
+  font-family: var(--font-label-badge);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.font-body-lg {
+  font-family: var(--font-body-lg);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.font-body-md {
+  font-family: var(--font-body-md);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.font-body-sm {
+  font-family: var(--font-body-sm);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Material symbols outlined styling */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.material-symbols-outlined.filled {
+  font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;
+}
+
